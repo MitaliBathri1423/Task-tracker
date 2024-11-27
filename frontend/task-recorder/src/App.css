@@ -1,0 +1,147 @@
+/* styles.css */
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333; /* Darker text color for readability */
+}
+
+/* Main Heading */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #007BFF; /* Primary button color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 500px; /* Restrict form width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Input & Select Fields */
+input, select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 100%; /* Makes the input fields take full width */
+  box-sizing: border-box; /* Ensures padding does not affect width */
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus effect */
+input:focus, select:focus {
+  border-color: #007BFF; /* Highlight border when focused */
+  outline: none; /* Remove default outline */
+}
+
+/* Task List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+/* List item hover effect */
+li:hover {
+  transform: translateY(-5px); /* Adds a slight lift effect on hover */
+}
+
+/* Task Title */
+li h3 {
+  margin: 0;
+  font-size: 1.4em;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Task Description */
+li p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Task Status */
+.task-status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Different status colors */
+.pending {
+  background-color: #f0ad4e;
+  color: #fff;
+}
+
+.completed {
+  background-color: #5bc0de;
+  color: #fff;
+}
+
+.important {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  form {
+    padding: 15px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+
+  button {
+    padding: 8px 15px;
+  }
+
+  li {
+    padding: 12px;
+  }
+}
